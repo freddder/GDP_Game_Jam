@@ -1,0 +1,47 @@
+-------- GDP Game Jam 2022, Lucas Magalhaes --------
+
+Defenetly not Pokemon Black/White 3
+
+Controls:
+- Arrow keys: walk
+- Arrow keys + hold left shift: run
+- Space: switch between fly camera & player camera
+- WASDQE + hold left mouse button: fly camera
+
+Map rules:
+- Map bmp files should go in /assets/maps
+- Both decoration map and collision map should have the same width and height
+- If no files are given as params, DemoDec.bmp and DemoCol.bmp will be loaded
+- Path and edge tiles should NOT be placed on edge of the map
+- Tree tiles also count as grass tiles
+- Its higly recommended that edge tiles should NOT be walkable
+- All edge tiles should always have 1 or 2 edge neighbours (up, down, left or right) and never more
+- All edge tiles should be at the heighest of the 2 height values its deviding
+- All edge tiles should be not walkable
+- Its highly recommended to have edge tiles between water tiles and grass tiles (lakes, pools, etc)
+- Water tiles should have lower height than the edges surrounding them
+- Stairs should be placed in tiles with neighbours with height difference of 1 level
+- If stairs have more than 1 step, the parallel tiles (where railing would go) should NOT be walkable
+- Structures don't have collision by default. Its recommended that the tiles they are on are set no not walkable
+- There should only be 1 player starting position tile per decoration map
+- Tiles RGB values should be exact
+
+Decoration tiles RGB values:
+- Grass: 0, 255, 0
+- Tree: 34, 177, 76
+- Path: 255, 255, 178
+- Edge: 253, 101, 0
+- Stair/slope: 126, 91, 65
+- Water: 0, 162, 232
+- House: 200, 109, 199
+- Lab: 255, 255, 0
+- Church: 63, 72, 204
+- Player starting position: 100, 100, 100
+
+Collision tiles RGB values:
+- Not walkable: R == 255
+- Walkable: R =/= 255
+- Height level: G / 15
+
+Code demonstration link: https://youtu.be/pCM2fbrvLKE
+Gameplay demonstration link: https://youtu.be/N8v5lB3_F60
